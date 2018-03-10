@@ -1,0 +1,27 @@
+<!DOCTYPE>
+<html>
+    <head><title>Bot</title></head>
+<body>
+    <div>
+        <h1> Hello there, I'm Kitty - your assistant </h1>
+    </div>
+    <div>
+        <textarea type="text" id="message" name="message" placeholder="Enter your message..."></textarea> </br>
+        <button type="submit" onclick="sendMessage(event)"> Send message </button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js" crossorigin="anonymous"></script>
+    <script>
+        function sendMessage() {
+            $.ajax({
+                url: '/sendMessage',
+                method: 'POST',
+                data: {
+                    message: $('#message').val()
+                }
+            }).done((resp) => {
+                console.log(resp);
+            });
+        }
+    </script>
+</body>
+</html>
