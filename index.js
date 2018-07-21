@@ -1,45 +1,12 @@
-const express = require('express')
-const bodyParser = require('body-parser')
-const request = require('request')
-const app = express()
-const Cosmic = require('cosmicjs')
-const BootBot = require('bootbot')
-const chrono = require('chrono-node')
-const schedule = require('node-schedule')
-const EventEmitter = require('events').EventEmitter
-const bootHooks = require('./bot.hooks');
-const eventEmitter = new EventEmitter()
 
-/**
- * Loads the .env to the process.env
- */
-require('dotenv').config()
+const dotenv = require('dotenv');
 
-app.set('port', (process.env.PORT || 5000))
-app.use(bodyParser.urlencoded({ extended: false }))
-app.use(bodyParser.json())
+const bootBot = require('./app/bootBot');
+const intents = require('./app/intents_reference');
 
-app.get('/', function (req, res) {
-  res.redirect('https://www.facebook.com/Na-Santos-Dre-191598887555824/');
-});
+const PORT = process.env.PORT || 4000;
 
-app.get('/webhook/', function (req, res) {
-  if (req.query['hub.verify_token'] === process.env.VERIFY_TOKEN) {
-    return res.send(req.query['hub.challenge'])
-  }
-  res.send('wrong token')
-});
+dotenv.config();
 
-app.listen(app.get('port'), function () {
-  console.log('Started on port', app.get('port'))
-});
-
-
-const bot = new BootBot({
-  accessToken: process.env.ACCESS_TOKEN,
-  verifyToken: process.env.VERIFY_TOKEN,
-  appSecret: process.env.APP_SECRET
-});
-
-bootHooks.hooks(bot);
-bot.start();
+const bot = bootBot.start(PORT);
+bootBot.registerIntents(bot, intents);
