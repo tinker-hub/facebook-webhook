@@ -8,7 +8,6 @@ module.exports = (bootBot) => {
   
   bootBot.hear(intents.basic.intents, async (payload, chat) => {
     const userProfile = await getUserProfile(chat);
-    const intentResponse = userProfile.first_name;
 
     chat.conversation((convo) => {
       const userFirstName = userProfile.first_name;
@@ -56,10 +55,7 @@ module.exports = (bootBot) => {
 
       convo.set('name', userFirstName);
       convo.ask(form.question(form.questionIndex), form.answer(form.questionIndex), askOption);
-      // convo.ask(stringReplacer(intents.basic.response, intentResponse), )
     });
-
-    chat.say();
   });
 };
 
