@@ -1,0 +1,202 @@
+[
+  {
+    "name": "Baclaran",
+    "location": {
+      "coordinates": [
+        120.9961191,
+        14.5343845
+      ]
+    },
+    "position": 0
+  },
+  {
+    "name": "EDSA",
+    "location": {
+      "coordinates": [
+        120.9984432,
+        14.5385806
+      ]
+    },
+    "position": 1
+  },
+  {
+    "name": "Libertad",
+    "location": {
+      "coordinates": [
+        120.9964164,
+        14.5476681
+      ]
+    },
+    "position": 2
+  },
+  {
+    "name": "Gil Puyat",
+    "location": {
+      "coordinates": [
+        120.9949731,
+        14.5541678
+      ]
+    },
+    "position": 3
+  },
+  {
+    "name": "Vito Cruz",
+    "location": {
+      "coordinates": [
+        120.9926238,
+        14.5633845
+      ]
+    },
+    "position": 4
+  },
+  {
+    "name": "Quirino",
+    "location": {
+      "coordinates": [
+        120.9893888,
+        14.5703488
+      ]
+    },
+    "position": 5
+  },
+  {
+    "name": "Pedro Gil",
+    "location": {
+      "coordinates": [
+        120.9858612,
+        14.5765345
+      ]
+    },
+    "position": 6
+  },
+  {
+    "name": "U.N. Avenue",
+    "location": {
+      "coordinates": [
+        120.982427,
+        14.5825552
+      ]
+    },
+    "position": 7
+  },
+  {
+    "name": "Central",
+    "location": {
+      "coordinates": [
+        120.9794673,
+        14.5927811
+      ]
+    },
+    "position": 8
+  },
+  {
+    "name": "Carriedo",
+    "location": {
+      "coordinates": [
+        120.979106,
+        14.5988132
+      ]
+    },
+    "position": 9
+  },
+  {
+    "name": "Doroteo Jose",
+    "location": {
+      "coordinates": [
+        120.979867,
+        14.6054454
+      ]
+    },
+    "position": 10
+  },
+  {
+    "name": "Bambang",
+    "location": {
+      "coordinates": [
+        120.980373,
+        14.6113278
+      ]
+    },
+    "position": 11
+  },
+  {
+    "name": "Tayuman",
+    "location": {
+      "coordinates": [
+        120.9805337,
+        14.6166698
+      ]
+    },
+    "position": 12
+  },
+  {
+    "name": "Blumentritt",
+    "location": {
+      "coordinates": [
+        120.9813413,
+        14.6227507
+      ]
+    },
+    "position": 13
+  },
+  {
+    "name": "Abad Santos",
+    "location": {
+      "coordinates": [
+        120.9792913,
+        14.6306086
+      ]
+    },
+    "position": 14
+  },
+  {
+    "name": "R. Papa",
+    "location": {
+      "coordinates": [
+        120.9801031,
+        14.636055
+      ]
+    },
+    "position": 15
+  },
+  {
+    "name": "5th Avenue",
+    "location": {
+      "coordinates": [
+        120.9814481,
+        14.6441945
+      ]
+    },
+    "position": 16
+  },
+  {
+    "name": "Monumento",
+    "location": {
+      "coordinates": [
+        120.9816149,
+        14.6543681
+      ]
+    },
+    "position": 17
+  },
+  {
+    "name": "Balintawak",
+    "location": {
+      "coordinates": [
+        121.0016808,
+        14.6574427
+      ]
+    },
+    "position": 18
+  },
+  {
+    "name": "Roosevelt",
+    "location": {
+      "coordinates": [
+        121.018997,
+        14.6575508
+      ]
+    },
+    "position": 19
+  }
+]
