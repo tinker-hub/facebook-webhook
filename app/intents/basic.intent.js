@@ -69,17 +69,12 @@ function stringReplacer(stringToReplace, value) {
 }
 
 async function getDensityStatus(station = '') {
-  const url = 'https://trainseet.tk/density';
+  const url = 'https://trainseet.tk/api/density';
   return new Promise((resolve, reject) => {
     request(url, (err, response, body) => {
       if (err) return reject(err);
       if (!body) body = `{"0":0,"density":15}`;
       const density = parseInt(JSON.parse(body).density);
-      const densityMock = [
-        { station: 'Edsa', density: 60, status: 'HIGH' },
-        { station: 'Doroteo Jose', density: 20, status: 'LIGHT' },
-        { station: 'Monumento', density: 40, status: 'MODERATE' }
-      ];
       const statuses = {
         LIGHT: 'As of now, there are a few people in ${station}',
         MODERATE: 'As of now, there are moderate people in ${station}',
